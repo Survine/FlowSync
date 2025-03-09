@@ -8,6 +8,7 @@ import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
+import Admin from './components/Admin';
 
 const App = () => {
   return (
@@ -30,6 +31,9 @@ const App = () => {
 
         {/* Login Page Route */}
         <Route path="/login" element={<Login />} />
+        
+        {/*Admin Page Route */}
+        <Route path="/admin" element={<Admin />} />
 
         {/* Signup Page Route */}
         <Route path="/signup" element={<SignUp />} />

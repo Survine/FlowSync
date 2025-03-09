@@ -1,5 +1,7 @@
 import { FaGoogle, FaFacebook, FaRegEnvelope } from 'react-icons/fa';
 import { RiLockPasswordLine } from 'react-icons/ri';
+import { Link } from 'react-router-dom';
+import logo2 from '../assets/logo2.png'
 
 
 const SignUp = () => {
@@ -8,10 +10,10 @@ const SignUp = () => {
       <div className="bg-neutral-900 p-8 rounded-2xl max-w-md w-full space-y-6">
         {/* Title Section */}
         <div className="flex items-center gap-3 justify-center">
-          <div className="bg-orange-500 p-2 rounded-full">
-            <RiLockPasswordLine className="text-2xl text-white" />
+          <div>
+            <img className='mr-2 w-10 h-10' src={logo2} alt="logo" />
           </div>
-          <h1 className="text-3xl font-bold bg-gradient-to-r from-teal-600 to-teal-950 bg-clip-text text-transparent">
+          <h1 className="text-3xl font-bold bg-gradient-to-r from-teal-600 to-teal-800 bg-clip-text text-transparent">
             Sign Up
           </h1>
         </div>
@@ -39,16 +41,16 @@ const SignUp = () => {
         <form className="space-y-4">
           <div className="flex items-center gap-3 bg-neutral-800 p-3 rounded-xl">
             <FaRegEnvelope className="text-neutral-400" />
-            <input 
-              type="email" 
+            <input
+              type="email"
               placeholder="Email"
               className="bg-transparent flex-1 text-white focus:outline-none"
             />
           </div>
           <div className="flex items-center gap-3 bg-neutral-800 p-3 rounded-xl">
             <RiLockPasswordLine className="text-neutral-400" />
-            <input 
-              type="password" 
+            <input
+              type="password"
               placeholder="Password"
               className="bg-transparent flex-1 text-white focus:outline-none"
             />
@@ -63,9 +65,9 @@ const SignUp = () => {
         {/* Existing Account Link */}
         <p className="text-center text-neutral-400">
           Already have an account?{' '}
-          <a href="#" className="text-orange-500 hover:text-orange-400 transition-colors">
+          <Link to="/login" className="text-teal-500 hover:text-teal-400 transition-colors">
             Log In
-          </a>
+          </Link>
         </p>
       </div>
     </div>

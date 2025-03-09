@@ -4,9 +4,9 @@ import { checklistItems } from "../constants"
 const Workflow = () => {
     return (
         <div id="workflow" className="mt-20">
-            <h2 className="mt-6 text-3xl sm:text-5xl lg:text-6xl text-center tracking-wide mb-5">
+            <h2 className="mt-6 text-3xl sm:text-5xl lg:text-6xl text-center tracking-wide mb-5 font-mono font-semibold">
                 Synchronize Your
-                <span className="bg-clip-text bg-gradient-to-r from-orange-500 to-orange-800 text-transparent"> Team Workflow</span>
+                <span className="bg-clip-text bg-gradient-to-r from-teal-500 to-teal-800 text-transparent"> Team Workflow</span>
             </h2>
             <div className="flex flex-wrap justify-center">
                 <div className="p-2 w-full lg:w-1/2">

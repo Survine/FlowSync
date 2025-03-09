@@ -1,5 +1,7 @@
 import { FaGoogle, FaFacebook, FaRegEnvelope } from 'react-icons/fa';
 import { RiLockPasswordLine } from 'react-icons/ri';
+import { Link } from 'react-router-dom';
+import logo2 from '../assets/logo2.png'
 
 const Login = () => {
   return (
@@ -7,10 +9,10 @@ const Login = () => {
       <div className="bg-neutral-900 p-8 rounded-2xl max-w-md w-full space-y-6">
         {/* Title Section */}
         <div className="flex items-center gap-3 justify-center">
-          <div className="bg-orange-500 p-2 rounded-full">
-            <RiLockPasswordLine className="text-2xl text-white" />
+          <div>
+            <img className='mr-2 w-10 h-10' src={logo2} alt="logo" />
           </div>
-          <h1 className="text-3xl font-bold bg-gradient-to-r from-teal-600 to-teal-950 bg-clip-text text-transparent">
+          <h1 className="text-3xl font-bold bg-gradient-to-r from-teal-600 to-teal-800 bg-clip-text text-transparent">
             Log In
           </h1>
         </div>
@@ -56,10 +58,10 @@ const Login = () => {
           {/* Remember Me & Forgot Password */}
           <div className="flex items-center justify-between">
             <label className="flex items-center gap-2 text-neutral-400">
-              <input type="checkbox" className="rounded accent-orange-500" />
+              <input type="checkbox" className="rounded accent-teal-500" />
               Remember me
             </label>
-            <a href="#" className="text-orange-500 hover:text-orange-400 transition-colors">
+            <a href="#" className="text-teal-500 hover:text-teal-400 transition-colors">
               Forgot Password?
             </a>
           </div>
@@ -70,11 +72,16 @@ const Login = () => {
           </button>
         </form>
         {/* Sign up Button */}
-        <p className="text-center text-neutral-400">
+        <p className="text-center text-neutral-400 mb-0">
           Don{"'"}t have an account?{' '}
-          <a href="#" className="text-orange-500 hover:text-orange-400 transition-colors">
+          <Link to="/signup" className="text-teal-500 hover:text-teal-400 transition-colors">
             Sign Up
-          </a>
+          </Link>
+        </p>
+        {/* Login admin Button */}
+        <p className="text-center text-neutral-400">
+          Login as{' '}
+          <Link to="/admin" className="text-teal-500 hover:text-teal-400 transition-colors">Admin</Link>
         </p>
       </div>
     </div>
