@@ -28,7 +28,6 @@ const HeroSection = () => {
                     <iframe
                         src={video1Url}
                         className='w-full h-full object-cover pointer-events-none'
-                        frameBorder="0"
                         allow="autoplay; fullscreen"
                         allowFullScreen
                         title="Video 1"
@@ -39,7 +38,6 @@ const HeroSection = () => {
                     <iframe
                         src={video2Url}
                         className='w-full h-full object-cover pointer-events-none'
-                        frameBorder="0"
                         allow="autoplay; fullscreen"
                         allowFullScreen
                         title="Video 2"
