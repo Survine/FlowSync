@@ -35,8 +35,8 @@ const Navbar = () => {
                         ))}
                     </ul>
                     <div className="hidden lg:flex justify-center items-center space-x-12">
-                        <Link to="/login" className='px-3 py-2 border rounded-md'>Sign In</Link>
-                        <Link to="/signup" className='bg-gradient-to-r from-orange-500 to-orange-900 px-3 py-2 rounded-md'>Create an Account</Link>
+                        <Link to="/login" className='px-3 py-2 border rounded-md hover:bg-teal-700 transition-all duration-300'>Sign In</Link>
+                        <Link to="/signup" className='bg-gradient-to-r from-teal-600 to-teal-950 px-3 py-2 rounded-md text-white font-medium hover:from-teal-950 hover:to-teal-600 transition-all duration-300'>Create an Account</Link>
                     </div>
                     <div className='lg:hidden md:flex flex-col justify-end' >
                         <button onClick={toggleNavbar}>
@@ -55,7 +55,7 @@ const Navbar = () => {
                         </ul>
                         <div className='flex space-x-6'>
                             <Link to="/login" className='px-3 py-2 border rounded-md'>Sign In</Link>
-                            <Link to="/signup" className='bg-gradient-to-r from-orange-500 to-orange-900 px-3 py-2 rounded-md'>Create an Account</Link>
+                            <Link to="/signup" className='bg-gradient-to-r from-teal-600 to-teal-950 px-3 py-2 rounded-md'>Create an Account</Link>
                         </div>
                     </div>
                 )}

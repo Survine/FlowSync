@@ -10,7 +10,7 @@ const Login = () => {
           <div className="bg-orange-500 p-2 rounded-full">
             <RiLockPasswordLine className="text-2xl text-white" />
           </div>
-          <h1 className="text-3xl font-bold bg-gradient-to-r from-orange-500 to-orange-900 bg-clip-text text-transparent">
+          <h1 className="text-3xl font-bold bg-gradient-to-r from-teal-600 to-teal-950 bg-clip-text text-transparent">
             Log In
           </h1>
         </div>
@@ -65,7 +65,7 @@ const Login = () => {
           </div>
 
           {/* Sign In Button */}
-          <button className="w-full bg-gradient-to-r from-orange-500 to-orange-900 text-white py-3 rounded-xl font-semibold hover:opacity-90 transition-all duration-300">
+          <button className="w-full bg-gradient-to-r from-teal-600 to-teal-950 text-white py-3 rounded-xl font-semibold hover:opacity-90 transition-all duration-300">
             Sign In
           </button>
         </form>
