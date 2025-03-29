@@ -178,3 +178,13 @@ export const communityLinks = [
   { href: "#", text: "Hackathons" },
   { href: "#", text: "Jobs" },
 ];
+
+export const workflowData = [
+  { name: "Jan", executions: 40 },
+  { name: "Feb", executions: 30 },
+  { name: "Mar", executions: 20 },
+  { name: "Apr", executions: 27 },
+  { name: "May", executions: 18 },
+  { name: "Jun", executions: 23 },
+  { name: "Jul", executions: 34 },
+];

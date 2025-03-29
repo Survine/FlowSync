@@ -16,6 +16,7 @@ const Navbar = () => {
         const element = document.getElementById(id);
         if (element) {
             element.scrollIntoView({ behavior: "smooth" });
+            setTimeout(() => setMobileDrawer(false), 100); // Close drawer after scroll
         }
     };
 
@@ -49,7 +50,7 @@ const Navbar = () => {
                         <ul>
                             {navItems.map((item, index) => (
                                 <li key={index} className='py-4' >
-                                    <a href={item.href}>{item.label}</a>
+                                    <button onClick={() => scrollToSection(item.href)} className="cursor-pointer">{item.label}</button>
                                 </li>
                             ))}
                         </ul>

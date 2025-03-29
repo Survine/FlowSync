@@ -16,7 +16,7 @@ const HeroSection = () => {
                 Say goodbye to manual updates and hello to automated efficiency.
             </p>
             <div className='flex justify-center my-10'>
-                <Link to="/signup" className='bg-gradient-to-r from-teal-500 to-teal-950 mx-3 px-4 py-3 rounded-md hover:from-teal-950 hover:to-teal-500 transition-all duration-300'>
+                <Link to="/dashboard" className='bg-gradient-to-r from-teal-500 to-teal-950 mx-3 px-4 py-3 rounded-md hover:from-teal-950 hover:to-teal-500 transition-all duration-300'>
                     Start for free
                 </Link>
                 <a href="https://tailwindcss.com/docs/installation/using-vite" target="_blank" rel="noopener noreferrer" className='hover:bg-teal-700 transition-all duration-300 mx-3 px-4 py-3 border rounded-md'>

@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import Admin from './components/Admin';
+import Dashboard from './components/Dashboard';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
               <Pricing />
               <Testimonials />
               <Footer />
+              <Dashboard />
             </div>
           </div>
         }/>
@@ -37,6 +39,10 @@ const App = () => {
 
         {/* Signup Page Route */}
         <Route path="/signup" element={<SignUp />} />
+
+        {/* Dashboard Page Route */}
+        <Route path="/dashboard" element={<Dashboard />} />
+
       </Routes>
     </Router>
   );
